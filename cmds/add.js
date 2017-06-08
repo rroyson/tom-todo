@@ -1,6 +1,12 @@
-const { get } = require('../lib/store.js')
+const { get, set } = require('../lib/store.js')
+const { append } = require ('ramda')
+const { map } = require ('../fp-utils')
 
+module.exports = function add (list) {
+  return appender("cat",list)
 
-module.exports = function add () {
+}
 
+function appender (userInput, list) {
+  return append(userInput, list)
 }

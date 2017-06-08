@@ -14,7 +14,7 @@ function handler(cmd = ('')) {
     case 'help':
       return help()
     case 'add':
-        return add()
+        return add(get())
     case 'ls':
         return ls(get())
     default:

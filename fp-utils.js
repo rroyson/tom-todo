@@ -1,7 +1,7 @@
 const { curry } = require('ramda')
 
 module.exports = {
-  forEach: forEach,
+  forEach: curry(forEach),
   map: curry(map),
   filter: curry(filter),
   reduce: curry(reduce),
