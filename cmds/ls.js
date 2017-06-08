@@ -1,4 +1,18 @@
 const { map, reduce } = require('../fp-utils')
+const {valuesIn} = require('ramda')
+
+// const removeKeys = function(v, list) {
+//   return list[0]
+// }
+//
+// const displayVal = function (list, fn) {
+//   return fn.list
+// }
+
+function li (todo) {
+  return `[${todo.completed ? 'x' : ' '}] - ${todo.id} ${todo.text}`
+}
+
 
 module.exports = function ls(list) {
   console.log('')
@@ -6,7 +20,7 @@ module.exports = function ls(list) {
   console.log('----------------------')
 
   map(function(todo) {
-    console.log(todo)
+    console.log(li(todo))
   }, list)
 
   console.log('----------------------')
@@ -21,3 +35,10 @@ module.exports = function ls(list) {
     ' Items Not Complete'
   )
 }
+
+
+// const getVal = compose(
+//   tap(print),
+//   valuesIn(),
+//   map()
+// ) (list)
