@@ -16,6 +16,13 @@ function appender (userInput, list) {
   return append(userInput, list)
 }
 
+var template = function (list) {
+  return {
+    `${store.text === ...rest},
+    ${store.id === store.id.length + 1},
+    ${store.complete === false}`
+  }
+}
 
 
 //store.set(newTodoList)
