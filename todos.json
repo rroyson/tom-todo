@@ -1,16 +1,11 @@
 [
   {
-    "text": "Create Add Item",
+    "text": "fo",
     "id": 1,
     "completed": false
   },
   {
-    "text": "List Todo Items",
-    "id": 2,
-    "completed": false
-  },
-  {
-    "text": "Print Help",
+    "text": "baz",
     "id": 3,
     "completed": false
   }
