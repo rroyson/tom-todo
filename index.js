@@ -15,7 +15,6 @@ function handler(cmd = ('')) {
       return help()
     case 'add':
         return editList(get())
-        return add(get())
     case 'ls':
         return ls(get())
     default:
