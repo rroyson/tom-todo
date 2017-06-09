@@ -8,6 +8,8 @@ const help = require('./cmds/help')
 const add = require('./cmds/add')
 const ls = require('./cmds/ls')
 const editList = require ('./cmds/edit-list.js')
+const rm = require('./cmds/rm')
+
 
 function handler(cmd = ('')) {
   switch(cmd.toLowerCase()) {
@@ -15,6 +17,8 @@ function handler(cmd = ('')) {
       return help()
     case 'add':
         return editList(get())
+    case 'rm':
+      return rm(get())
     case 'ls':
         return ls(get())
     default:

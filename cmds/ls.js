@@ -10,8 +10,8 @@ const {valuesIn} = require('ramda')
 // }
 
 function li (todo) {
-  return `[${todo.completed ? 'x' : ' '}] - ${todo.id} ${todo.text}`
-}
+  return `[${todo.completed ? 'x' : ' '}] - ${todo.text}`
+} //${todo.id}
 
 
 module.exports = function ls(list) {
